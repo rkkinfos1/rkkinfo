@@ -1,0 +1,48 @@
+<%- model_class = InstantCustomer -%>
+<div align="center">
+<a href="http://localhost:3000/oneyear_customers"><button>One Year customers</button></a>
+
+<a href="http://localhost:3000/twoyear_customers"><button>Two Year customers</button></a>
+</div>
+
+<div align="right">
+<%= form_tag :controller => 'login', 
+             :action => 'logout' do %>
+<%= submit_tag 'Logout', :class => 'ctrl' %>
+<% end %>
+</div>
+<br><br>
+<h4><center>These customers have applied for one time incident</center></h4>
+<h5><center>These Customers have given $99</center></h5>
+<br/><br/>
+<form class="form-search">
+
+    <%= text_field_tag :emp_no, params[:emp_no] %>
+
+    <button type="submit" class="btn">Search</button>
+    </form>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:emp_no) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:e_mail) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @instant_customers.each do |instant_customer| %>
+      <tr>
+        <td><%= instant_customer.emp_no %></td>
+        <td><%= instant_customer.name %></td>
+        <td><%= instant_customer.e_mail %></td>
+        <td><%= instant_customer.phone %></td>
+        <td><%=l instant_customer.created_at %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

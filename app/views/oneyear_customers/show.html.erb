@@ -1,0 +1,23 @@
+<html>
+<%- model_class = OneyearCustomer -%>
+
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:emp_no) %>:</strong></dt>
+  <dd><%= @oneyear_customer.emp_no %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @oneyear_customer.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:e_mail) %>:</strong></dt>
+  <dd><%= @oneyear_customer.e_mail %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd><%= @oneyear_customer.phone %></dd>
+</dl>
+
+<div class="form-actions">
+
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_oneyear_customer_path(@oneyear_customer), :class => 'btn' %>
+ 
+</div>
+<a href="https://www.google.com"><button>Continue</button></a>
+</html>
