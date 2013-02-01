@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'therubyracer', '0.11.0beta1'
+gem 'therubyracer'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'paperclip'
