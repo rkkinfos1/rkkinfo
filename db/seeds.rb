@@ -8,35 +8,82 @@
 require 'digest/sha2'
 
 pw = LoginInfo.new
-pw.username = "ankit"
-pw.password = Digest::SHA2.hexdigest("ankit")
+pw.username = "Amit"
+pw.password = Digest::SHA2.hexdigest("rkkinfo101")
 pw.save
 
 pw = LoginInfo.new
-pw.username = "admin"
-pw.password = Digest::SHA2.hexdigest("admin")
+pw.username = "Baldeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo102")
 pw.save
+
+pw = LoginInfo.new
+pw.username = "Manoj"
+pw.password = Digest::SHA2.hexdigest("rkkinfo103")
+pw.save
+
+pw = LoginInfo.new
+pw.username = "Sandeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo104")
+pw.save
+
+pw = LoginInfo.new
+pw.username = "Kavita"
+pw.password = Digest::SHA2.hexdigest("rkkinfo105")
+pw.save
+
 
 require 'digest/sha2'
 
 pw = LoginInfo1.new
-pw.username = "ankit"
-pw.password = Digest::SHA2.hexdigest("ankit")
+pw.username = "Amit"
+pw.password = Digest::SHA2.hexdigest("rkkinfo101")
 pw.save
 
 pw = LoginInfo1.new
-pw.username = "admin"
-pw.password = Digest::SHA2.hexdigest("admin")
+pw.username = "Baldeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo102")
 pw.save
+
+pw = LoginInfo1.new
+pw.username = "Manoj"
+pw.password = Digest::SHA2.hexdigest("rkkinfo103")
+pw.save
+
+pw = LoginInfo1.new
+pw.username = "Sandeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo104")
+pw.save
+
+pw = LoginInfo1.new
+pw.username = "Kavita"
+pw.password = Digest::SHA2.hexdigest("rkkinfo105")
+pw.save
+
 
 require 'digest/sha2'
 
 pw = LoginInfo2.new
-pw.username = "ankit"
-pw.password = Digest::SHA2.hexdigest("ankit")
+pw.username = "Amit"
+pw.password = Digest::SHA2.hexdigest("rkkinfo101")
 pw.save
 
 pw = LoginInfo2.new
-pw.username = "admin"
-pw.password = Digest::SHA2.hexdigest("admin")
+pw.username = "Baldeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo102")
+pw.save
+
+pw = LoginInfo2.new
+pw.username = "Manoj"
+pw.password = Digest::SHA2.hexdigest("rkkinfo103")
+pw.save
+
+pw = LoginInfo2.new
+pw.username = "Sandeep"
+pw.password = Digest::SHA2.hexdigest("rkkinfo104")
+pw.save
+
+pw = LoginInfo2.new
+pw.username = "Kavita"
+pw.password = Digest::SHA2.hexdigest("rkkinfo105")
 pw.save
