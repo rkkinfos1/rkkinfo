@@ -9,7 +9,7 @@ en:
     dashboard: Admin block
     dashboard_welcome:
       welcome: "Welcome to RKK Info Admin section. "
-      call_to_action: "Hope you have a nice Experience"
+      call_to_action: "Hope you have a nice Experience."
     view: "View"
     edit: "Edit"
     delete: "Delete"
