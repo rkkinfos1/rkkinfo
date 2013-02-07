@@ -11,7 +11,48 @@
       <%= f.text_field :name, :class => 'text_field' %>
     </div>
   </div>
-
+<div class="control-group">
+    <%= f.label :address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :address, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :tel, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :tel, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :salary, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :salary, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_joining, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :date_of_joining, :id => 'datetime', :class => 'datetime' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_resignation, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :date_of_resignation, :id => 'datetime', :class => 'datetime'  %>
+    </div>
+  </div>
+   <div class="control-group">
+    <%= f.label :CV, :class => 'control-label' %>
+    <div class="controls">
+ <%= f.file_field :cv %>    </div>
+  </div>
+  </div>
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

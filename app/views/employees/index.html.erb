@@ -8,6 +8,21 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:no) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:address) %></th>
+
+      <th><%= model_class.human_attribute_name(:tel) %></th>
+
+      <th><%= model_class.human_attribute_name(:email) %></th>
+
+      <th><%= model_class.human_attribute_name(:salary) %></th>
+
+      <th><%= model_class.human_attribute_name(:date_of_joining) %></th>
+            <th><%= model_class.human_attribute_name(:date_of_resignation) %></th>
+                  <th><%= model_class.human_attribute_name(:cv) %></th>
+
+
+
+
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -18,6 +33,19 @@
         <td><%= link_to employee.id, employee_path(employee) %></td>
         <td><%= employee.no %></td>
         <td><%= employee.name %></td>
+                <td><%= employee.address %></td>
+
+        <td><%= employee.tel %></td>
+
+        <td><%= employee.email %></td>
+
+        <td><%= employee.salary %></td>
+
+        <td><%= employee.date_of_joining %></td>
+                <td><%= employee.date_of_resignation %></td>
+
+        <td><%= link_to 'My CV', employee.cv.url %></td>
+
         <td><%=l employee.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
