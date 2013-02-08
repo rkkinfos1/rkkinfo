@@ -3,17 +3,17 @@
 one:
   emp_no: 1
   name: MyString
-  email: MyString
+  e_mail: MyString
   phone: MyString
-  issue: MyString
+  issue: MyText
   feedback: MyString
   status: MyString
 
 two:
   emp_no: 1
   name: MyString
-  email: MyString
+  e_mail: MyString
   phone: MyString
-  issue: MyString
+  issue: MyText
   feedback: MyString
   status: MyString

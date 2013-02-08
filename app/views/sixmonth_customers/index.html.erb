@@ -1,4 +1,4 @@
-<%- model_class = SixmonthsCustomer -%>
+<%- model_class = SixmonthCustomer -%>
 <div align="center">
 <a href="http://rkkinfosystem.herokuapp.com/instant_customers"><button>One Time customers</button></a>
 <a href="http://rkkinfosystem.herokuapp.com/oneyear_customers"><button>One Year customers</button></a>
@@ -36,20 +36,20 @@
     </tr>
   </thead>
   <tbody>
-    <% @sixmonths_customers.each do |sixmonths_customer| %>
+    <% @sixmonth_customers.each do |sixmonth_customer| %>
       <tr>
-        <td><%= link_to sixmonths_customer.id, sixmonths_customer_path(sixmonths_customer) %></td>
-        <td><%= sixmonths_customer.emp_no %></td>
-        <td><%= sixmonths_customer.name %></td>
-        <td><%= sixmonths_customer.email %></td>
-        <td><%= sixmonths_customer.phone %></td>
-        <td><%= sixmonths_customer.issue %></td>
-        <td><%= sixmonths_customer.feedback %></td>
-        <td><%= sixmonths_customer.status %></td>
-        <td><%=l sixmonths_customer.created_at %></td>
+        <td><%= link_to sixmonth_customer.id, sixmonth_customer_path(sixmonth_customer) %></td>
+        <td><%= sixmonth_customer.emp_no %></td>
+        <td><%= sixmonth_customer.name %></td>
+        <td><%= sixmonth_customer.email %></td>
+        <td><%= sixmonth_customer.phone %></td>
+        <td><%= sixmonth_customer.issue %></td>
+        <td><%= sixmonth_customer.feedback %></td>
+        <td><%= sixmonth_customer.status %></td>
+        <td><%=l sixmonth_customer.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_sixmonths_customer_path(sixmonths_customer), :class => 'btn btn-mini' %>
+                      edit_sixmonth_customer_path(sixmonth_customer), :class => 'btn btn-mini' %>
           
         </td>
       </tr>

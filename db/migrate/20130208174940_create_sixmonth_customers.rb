@@ -1,11 +1,11 @@
-class CreateSixmonthsCustomers < ActiveRecord::Migration
+class CreateSixmonthCustomers < ActiveRecord::Migration
   def change
-    create_table :sixmonths_customers do |t|
+    create_table :sixmonth_customers do |t|
       t.integer :emp_no
       t.string :name
-      t.string :email
+      t.string :e_mail
       t.string :phone
-      t.string :issue
+      t.text :issue
       t.string :feedback
       t.string :status
 

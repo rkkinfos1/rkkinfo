@@ -1,5 +1,5 @@
 Rkkinfo::Application.routes.draw do
-  resources :sixmonths_customers
+  resources :sixmonth_customers
 
 
   get "login2/login_page"

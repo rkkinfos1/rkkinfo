@@ -1,7 +1,7 @@
-ActiveAdmin.register SixmonthsCustomer do
- 
- scope :new_customer
+ActiveAdmin.register SixmonthCustomer do
+   scope :new_customer
    menu :parent => "Customers"
+
 
     actions :all
     filter :emp_no
@@ -13,11 +13,10 @@ index do
 
   column :emp_no
   column :name
-  column :email
+  column :e_mail
   column :phone
   column "joined on", :created_at
   
   default_actions
 end 
-
 end

@@ -1,0 +1,2 @@
+module SixmonthCustomersHelper
+end

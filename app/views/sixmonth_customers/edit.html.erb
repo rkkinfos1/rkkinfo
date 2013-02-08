@@ -1,8 +1,8 @@
 <html>
 <br>
-<%- model_class = SixmonthsCustomer -%>
+<%- model_class = SixmonthCustomer -%>
 
-<%= form_for @sixmonths_customer, :html => { :class => 'form-horizontal' } do |f| %>
+<%= form_for @sixmonth_customer, :html => { :class => 'form-horizontal' } do |f| %>
 
 <div class="control-group">
     <%= f.label :issue, :class => 'control-label' %>
@@ -23,8 +23,8 @@
     </div>
   </div>
    <div class="form-actions">
-<form method="post" action="https://localhost:3000/sixmonths_customers">
-    <input type="submit" value="Proceed">
+<form class="form-search">
+    <button type="submit" class="btn">Proceed</button>
     </form>   
   </div>
   <% end %>
