@@ -1,0 +1,63 @@
+<%- model_class = SixmonthsCustomer -%>
+<div align="center">
+  <a href="http://rkkinfosystem.herokuapp.com/instant_customers"><button>One Time customers</button></a>
+
+    <a href="http://rkkinfosystem.herokuapp.com/sixmonths_customers"><button>Six Months customers</button></a>
+<a href="http://rkkinfosystem.herokuapp.com/oneyear_customers"><button>One Year customers</button></a>
+
+<a href="http://rkkinfosystem.herokuapp.com/twoyear_customers"><button>Two Year customers</button></a>
+</div>
+<div align="right">
+<%= form_tag :controller => 'login', 
+             :action => 'logout' do %>
+<%= submit_tag 'Logout', :class => 'ctrl' %>
+<% end %>
+</div>
+<br><br>
+<h4><center>These customers have applied for six Months service</center></h4>
+<h5><center>These Customers have given $129/£129</center></h5>
+<br/><br/>
+<form class="form-search">
+
+    <%= text_field_tag :emp_no, params[:emp_no] %>
+
+    <button type="submit" class="btn">Search</button>
+    </form>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:emp_id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:tel) %></th>
+      <th><%= model_class.human_attribute_name(:issue) %></th>
+      <th><%= model_class.human_attribute_name(:feedback) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sixmonths_customers.each do |sixmonths_customer| %>
+      <tr>
+        <td><%= link_to sixmonths_customer.id, sixmonths_customer_path(sixmonths_customer) %></td>
+        <td><%= sixmonths_customer.emp_id %></td>
+        <td><%= sixmonths_customer.name %></td>
+        <td><%= sixmonths_customer.email %></td>
+        <td><%= sixmonths_customer.tel %></td>
+        <td><%= sixmonths_customer.issue %></td>
+        <td><%= sixmonths_customer.feedback %></td>
+        <td><%=l sixmonths_customer.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_sixmonths_customer_path(sixmonths_customer), :class => 'btn btn-mini' %>
+         
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_sixmonths_customer_path,
+            :class => 'btn btn-primary' %>

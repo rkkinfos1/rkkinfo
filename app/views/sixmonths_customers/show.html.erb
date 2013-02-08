@@ -1,0 +1,36 @@
+<html>
+<%- model_class = SixmonthsCustomer -%>
+
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:emp_id) %>:</strong></dt>
+  <dd><%= @sixmonths_customer.emp_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @sixmonths_customer.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @sixmonths_customer.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:tel) %>:</strong></dt>
+  <dd><%= @sixmonths_customer.tel %></dd>
+  
+</dl>
+
+<td height="30" align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td height="30" align="center"><form name="confirmation" id="confirmation" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" name="business" value="amandeep9899@gmail.com">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="amount" value="129">
+        <input type="hidden" name="item_name" value="Sixmonths>">
+        <input type="hidden" name="currency_code" value="GBP">
+        
+        <input type="submit" value="£ Buy Now"/></form></td>
+                                          <td height="30" align="center"><form name="confirmation" id="confirmation" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" name="business" value="amandeep9899@gmail.com">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="amount" value="129">
+        <input type="hidden" name="item_name" value="Sixmonths">
+        <input type="hidden" name="currency_code" value="USD">
+        
+        <input type="submit" value="$ Buy Now"/></form></td>
+        </html>

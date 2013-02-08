@@ -1,4 +1,7 @@
 Rkkinfo::Application.routes.draw do
+  resources :sixmonths_customers
+
+
   get "login2/login_page"
 post "login2/login_page"
 post "login2/logout"

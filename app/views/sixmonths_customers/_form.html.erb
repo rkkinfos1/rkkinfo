@@ -1,0 +1,33 @@
+<%= form_for @sixmonths_customer, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :emp_id, :class => 'control-label' %>
+    <div class="controls">
+    <%= f.select :emp_id, Employee.all.collect(&:no) %>    
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :tel, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :tel, :class => 'text_field' %>
+    </div>
+  </div>
+  
+
+   <div class="form-actions">
+<form class="form-search">
+    <button type="submit" class="btn">Proceed</button>
+    </form>   
+  </div>
+<% end %>
