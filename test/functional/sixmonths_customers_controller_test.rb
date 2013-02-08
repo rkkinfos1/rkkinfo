@@ -18,7 +18,7 @@ class SixmonthsCustomersControllerTest < ActionController::TestCase
 
   test "should create sixmonths_customer" do
     assert_difference('SixmonthsCustomer.count') do
-      post :create, sixmonths_customer: { email: @sixmonths_customer.email, emp_id: @sixmonths_customer.emp_id, feedback: @sixmonths_customer.feedback, issue: @sixmonths_customer.issue, name: @sixmonths_customer.name, tel: @sixmonths_customer.tel }
+      post :create, sixmonths_customer: { email: @sixmonths_customer.email, emp_no: @sixmonths_customer.emp_no, feedback: @sixmonths_customer.feedback, issue: @sixmonths_customer.issue, name: @sixmonths_customer.name, phone: @sixmonths_customer.phone, status: @sixmonths_customer.status }
     end
 
     assert_redirected_to sixmonths_customer_path(assigns(:sixmonths_customer))
@@ -35,7 +35,7 @@ class SixmonthsCustomersControllerTest < ActionController::TestCase
   end
 
   test "should update sixmonths_customer" do
-    put :update, id: @sixmonths_customer, sixmonths_customer: { email: @sixmonths_customer.email, emp_id: @sixmonths_customer.emp_id, feedback: @sixmonths_customer.feedback, issue: @sixmonths_customer.issue, name: @sixmonths_customer.name, tel: @sixmonths_customer.tel }
+    put :update, id: @sixmonths_customer, sixmonths_customer: { email: @sixmonths_customer.email, emp_no: @sixmonths_customer.emp_no, feedback: @sixmonths_customer.feedback, issue: @sixmonths_customer.issue, name: @sixmonths_customer.name, phone: @sixmonths_customer.phone, status: @sixmonths_customer.status }
     assert_redirected_to sixmonths_customer_path(assigns(:sixmonths_customer))
   end
 

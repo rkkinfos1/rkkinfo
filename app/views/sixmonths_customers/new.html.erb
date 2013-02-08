@@ -1,5 +1,6 @@
-<html>
-<Center><h5>You have opted for two year service.</h5></center>
-<br>
+<%- model_class = SixmonthsCustomer -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => t('helpers.titles.new', :model => model_class.model_name.human,
+                                 :default => "New #{model_class.model_name.human}") %></h1>
+</div>
 <%= render :partial => 'form' %>
-</html>

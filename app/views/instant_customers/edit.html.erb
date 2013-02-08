@@ -2,13 +2,6 @@
 
 <br>
 <%- model_class = InstantCustomer -%>
-<%= form_for @instant_customer, :html => { :class => 'form-horizontal' } do |f| %>
 
- <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :name, :class => 'text_field' %>
-    </div>
-  </div>
-  <% end %>
+<%= render :partial => 'form' %>
 </html>

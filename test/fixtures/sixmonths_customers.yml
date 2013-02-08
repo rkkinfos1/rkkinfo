@@ -1,17 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  emp_id: 1
+  emp_no: 1
   name: MyString
   email: MyString
-  tel: MyString
-  issue: MyText
-  feedback: MyText
+  phone: MyString
+  issue: MyString
+  feedback: MyString
+  status: MyString
 
 two:
-  emp_id: 1
+  emp_no: 1
   name: MyString
   email: MyString
-  tel: MyString
-  issue: MyText
-  feedback: MyText
+  phone: MyString
+  issue: MyString
+  feedback: MyString
+  status: MyString

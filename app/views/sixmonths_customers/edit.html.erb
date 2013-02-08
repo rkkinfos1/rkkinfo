@@ -1,22 +1,31 @@
 <html>
-
 <br>
 <%- model_class = SixmonthsCustomer -%>
+
 <%= form_for @sixmonths_customer, :html => { :class => 'form-horizontal' } do |f| %>
 
-  <div class="control-group">
+<div class="control-group">
     <%= f.label :issue, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :issue, :class => 'text_area' %>
+      <%= f.text_field :issue, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :feedback, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :feedback, :class => 'text_area' %>
+      <%= f.text_field :feedback, :class => 'text_field' %>
     </div>
   </div>
+  <div class="control-group">
+    <%= f.label :status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :status, :class => 'text_field' %>
+    </div>
+  </div>
+   <div class="form-actions">
+<form method="post" action="https://localhost:3000/sixmonths_customers">
+    <input type="submit" value="Proceed">
+    </form>   
+  </div>
   <% end %>
-
-  <a href="http://localhost:3000/sixmonths_customers"><button>Proceed</button></a>
 </html>

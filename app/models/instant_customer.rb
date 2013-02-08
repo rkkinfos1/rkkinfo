@@ -7,7 +7,7 @@ class InstantCustomer < ActiveRecord::Base
      validates_presence_of :emp_no, :e_mail, :name, :phone
      def self.search(search)
   if search
-    find(:all, :conditions => ['cast(emp_id as text) LIKE ?', "%#{search}%"])
+    find(:all, :conditions => ['cast(emp_no as text) LIKE ?', "%#{search}%"])
   else
     find(:all)
   end

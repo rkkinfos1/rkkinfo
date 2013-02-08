@@ -1,8 +1,8 @@
 <%= form_for @sixmonths_customer, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :emp_id, :class => 'control-label' %>
+    <%= f.label :emp_no, :class => 'control-label' %>
     <div class="controls">
-    <%= f.select :emp_id, Employee.all.collect(&:no) %>    
+<%= f.select :emp_no, Employee.all.collect(&:no) %>    
     </div>
   </div>
   <div class="control-group">
@@ -18,14 +18,13 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :tel, :class => 'control-label' %>
+    <%= f.label :phone, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :tel, :class => 'text_field' %>
+      <%= f.text_field :phone, :class => 'text_field' %>
     </div>
   </div>
   
-
-   <div class="form-actions">
+  <div class="form-actions">
 <form class="form-search">
     <button type="submit" class="btn">Proceed</button>
     </form>   
