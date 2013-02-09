@@ -29,7 +29,12 @@
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:e_mail) %></th>
       <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:issue) %></th>
+      <th><%= model_class.human_attribute_name(:feedback) %></th>
+      <th><%= model_class.human_attribute_name(:status) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+
     </tr>
   </thead>
   <tbody>
@@ -39,8 +44,15 @@
         <td><%= instant_customer.name %></td>
         <td><%= instant_customer.e_mail %></td>
         <td><%= instant_customer.phone %></td>
+        <td><%= instant_customer.issue %></td>
+        <td><%= instant_customer.feedback %></td>
+        <td><%= instant_customer.status %></td>
         <td><%=l instant_customer.created_at %></td>
-        
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_instant_customer_path(instant_customer), :class => 'btn btn-mini' %>
+          
+        </td>
       </tr>
     <% end %>
   </tbody>

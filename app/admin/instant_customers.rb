@@ -15,6 +15,9 @@ index do
   column :name
   column :e_mail
   column :phone
+  column :issue
+  column :feedback
+  column :status
   column "joined on", :created_at
   
   default_actions

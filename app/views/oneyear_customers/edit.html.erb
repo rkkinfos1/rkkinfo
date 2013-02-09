@@ -1,3 +1,31 @@
+<html>
+<br>
 <%- model_class = OneyearCustomer -%>
 
-<%= render :partial => 'form' %>
+<%= form_for @oneyear_customer, :html => { :class => 'form-horizontal' } do |f| %>
+
+<div class="control-group">
+    <%= f.label :issue, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :issue, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :feedback, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :feedback, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select :status, ['Issue Solved','Issue Not Solved','Under Screening'] %>
+    </div>
+  </div>
+   <div class="form-actions">
+<form class="form-search">
+    <button type="submit" class="btn">Proceed</button>
+    </form>   
+  </div>
+  <% end %>
+</html>

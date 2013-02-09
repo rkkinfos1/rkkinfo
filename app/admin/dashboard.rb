@@ -24,6 +24,17 @@ ActiveAdmin.register_page "Dashboard" do
 end
 
 
+section "Newly Added Six Months Customers" do
+    table_for SixmonthCustomer.order("created_at desc").limit(5) do
+        column :emp_no
+        column :name
+        column "email",:e_mail
+        column :phone
+        column "Joined On",:created_at
+    end
+    strong{ link_to "View All Six Months customers",admin_sixmonth_customers_path}
+end
+
 section "Newly Added One Year Customers" do
     table_for OneyearCustomer.order("created_at desc").limit(5) do
         column :emp_no
