@@ -64,7 +64,7 @@ end
 
     respond_to do |format|
       if @twoyear_customer.update_attributes(params[:twoyear_customer])
-        format.html { redirect_to @twoyear_customer, notice: 'Twoyear customer was successfully updated.' }
+        format.html { redirect_to action: :index }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
