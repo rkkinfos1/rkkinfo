@@ -7,13 +7,14 @@
 <div class="control-group">
     <%= f.label :issue, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :issue, :class => 'text_field' %>
+      <%= f.text_area :issue, :class => 'text_field', :cols => "30", :rows => "8" %>
     </div>
   </div>
+  
   <div class="control-group">
-    <%= f.label :feedback, :class => 'control-label' %>
+    <%= f.label :trouble_shooting_steps, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :feedback, :class => 'text_field' %>
+      <%= f.text_area :trouble_shooting_steps, :class => 'text_field', :cols => "30", :rows => "8" %>
     </div>
   </div>
   <div class="control-group">

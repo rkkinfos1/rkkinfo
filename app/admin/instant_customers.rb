@@ -15,8 +15,11 @@ index do
   column :name
   column :e_mail
   column :phone
+    column :plan
+
   column :issue
   column :feedback
+  column :trouble_shooting_steps
   column :status
   column "joined on", :created_at
   

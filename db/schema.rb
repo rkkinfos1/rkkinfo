@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130209020449) do
+ActiveRecord::Schema.define(:version => 20130211131207) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -68,11 +68,13 @@ ActiveRecord::Schema.define(:version => 20130209020449) do
     t.string   "name"
     t.string   "e_mail"
     t.string   "phone"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.text     "issue"
     t.text     "feedback"
     t.string   "status"
+    t.text     "trouble_shooting_steps"
+    t.string   "plan"
   end
 
   create_table "login_info1s", :force => true do |t|
@@ -101,11 +103,13 @@ ActiveRecord::Schema.define(:version => 20130209020449) do
     t.string   "name"
     t.string   "e_mail"
     t.string   "phone"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.text     "issue"
     t.text     "feedback"
     t.string   "status"
+    t.text     "trouble_shooting_steps"
+    t.string   "plan"
   end
 
   create_table "sixmonth_customers", :force => true do |t|
@@ -116,8 +120,10 @@ ActiveRecord::Schema.define(:version => 20130209020449) do
     t.text     "issue"
     t.string   "feedback"
     t.string   "status"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+    t.text     "trouble_shooting_steps"
+    t.string   "plan"
   end
 
   create_table "twoyear_customers", :force => true do |t|
@@ -125,11 +131,13 @@ ActiveRecord::Schema.define(:version => 20130209020449) do
     t.string   "name"
     t.string   "e_mail"
     t.string   "phone"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.text     "issue"
     t.text     "feedback"
     t.string   "status"
+    t.text     "trouble_shooting_steps"
+    t.string   "plan"
   end
 
 end

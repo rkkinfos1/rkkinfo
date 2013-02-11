@@ -24,7 +24,12 @@
       <%= f.text_field :phone, :class => 'text_field' %>
     </div>
   </div>
-
+ <div class="control-group">
+    <%= f.label :plan, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :plan, :class => 'text_field', :value => "$99" %>
+    </div>
+  </div>
   <div class="form-actions">
    <form class="form-search">
     <button type="submit" class="btn">Proceed</button>

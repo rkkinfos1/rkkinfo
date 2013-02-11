@@ -27,8 +27,9 @@
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:e_mail) %></th>
       <th><%= model_class.human_attribute_name(:phone) %></th>
+            <th><%= model_class.human_attribute_name(:plan) %></th>
       <th><%= model_class.human_attribute_name(:issue) %></th>
-      <th><%= model_class.human_attribute_name(:feedback) %></th>
+      <th><%= model_class.human_attribute_name(:trouble_shooting_steps) %></th>
       <th><%= model_class.human_attribute_name(:status) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>    </tr>
@@ -40,8 +41,10 @@
         <td><%=  twoyear_customer.name %></td>
         <td><%=  twoyear_customer.e_mail %></td>
         <td><%=  twoyear_customer.phone %></td>
+                        <td><%=  oneyear_customer.plan %></td>
+
         <td><%= twoyear_customer.issue %></td>
-        <td><%= twoyear_customer.feedback %></td>
+        <td><%= twoyear_customer.trouble_shooting_steps %></td>
         <td><%= twoyear_customer.status %></td>
         <td><%=l twoyear_customer.created_at %></td>
         <td>

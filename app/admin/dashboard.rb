@@ -18,6 +18,7 @@ ActiveAdmin.register_page "Dashboard" do
         column :name
         column "email",:e_mail
         column :phone
+        column :plan
         column "Joined On",:created_at
     end
     strong{ link_to "View All One time customers",admin_instant_customers_path}
@@ -30,6 +31,8 @@ section "Newly Added Six Months Customers" do
         column :name
         column "email",:e_mail
         column :phone
+          column :plan
+
         column "Joined On",:created_at
     end
     strong{ link_to "View All Six Months customers",admin_sixmonth_customers_path}
@@ -41,6 +44,8 @@ section "Newly Added One Year Customers" do
         column :name
         column "email",:e_mail
         column :phone
+  column :plan
+
         column "Joined On",:created_at
     end
     strong{ link_to "View All One Year customers",admin_oneyear_customers_path}
@@ -52,6 +57,8 @@ section "Newly Added Two Year Customers" do
         column :name
         column "email",:e_mail
         column :phone
+  column :plan
+
         column "Joined On",:created_at
     end
     strong{ link_to "View All Two Year customers",admin_twoyear_customers_path}
