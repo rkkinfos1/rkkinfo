@@ -27,6 +27,7 @@ gem "meta_search",    '>= 1.1.0.pre'
 gem 'paperclip'
 gem 'twitter-bootstrap-rails'
 gem 'simplecov', :require => false, :group => :test
+gem 'client_side_validations'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
