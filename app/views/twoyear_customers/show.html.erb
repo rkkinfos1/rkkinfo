@@ -3,33 +3,32 @@
 
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:emp_no) %>:</strong></dt>
-  <dd><%= @twoyear_customer.emp_no %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
-  <dd><%= @twoyear_customer.name %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:e_mail) %>:</strong></dt>
-  <dd><%= @twoyear_customer.e_mail %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
-  <dd><%= @twoyear_customer.phone %></dd>
-   <dt><strong><%= model_class.human_attribute_name(:plan) %>:</strong></dt>
-  <dd><%= @twoyear_customer.plan %></dd>
+  <dt style="color:#16C970"><strong><%= model_class.human_attribute_name(:emp_no) %>:</strong></dt>
+  <dd style="color:#1C9DD6"><%= @twoyear_customer.emp_no %></dd>
+  <dt style="color:#16C970"><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd style="color:#1C9DD6"><%= @twoyear_customer.name %></dd>
+  <dt style="color:#16C970"><strong><%= model_class.human_attribute_name(:e_mail) %>:</strong></dt>
+  <dd style="color:#1C9DD6"><%= @twoyear_customer.e_mail %></dd>
+  <dt style="color:#16C970"><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd style="color:#1C9DD6"><%= @twoyear_customer.phone %></dd>
+   <dt style="color:#16C970"><strong><%= model_class.human_attribute_name(:plan) %>:</strong></dt>
+  <dd style="color:#1C9DD6"><%= @twoyear_customer.plan %></dd>
 </dl>
 
-
-<td height="30" align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                           <td height="30" align="center"><form name="confirmation" id="confirmation" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" name="business" value="amandeep9899@gmail.com">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="amount" value="279">
-        <input type="hidden" name="item_name" value="IncidentForOnce>">
-        <input type="hidden" name="currency_code" value="GBP">
-        
-        <input type="submit" value="£ Buy Now"/></form></td>
-                                          <td height="30" align="center"><form name="confirmation" id="confirmation" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" name="business" value="amandeep9899@gmail.com">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="amount" value="279">
-        <input type="hidden" name="item_name" value="oneYear>">
-        <input type="hidden" name="currency_code" value="USD">
-        
-        <input type="submit" value="$ Buy Now"/></form></td>
+                                          <td align="center">
+<form action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/708401545251124" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
+    <input name="item_name_1" type="hidden" value="Two Year tech support"/>
+    <input name="item_description_1" type="hidden" value="Two Year Tech Support For Single Computer."/>
+    <input name="item_quantity_1" type="hidden" value="1"/>
+    <input name="item_price_1" type="hidden" value="279.0"/>
+    <input name="item_currency_1" type="hidden" value="USD"/>
+    <input name="_charset_" type="hidden" value="utf-8"/>
+<input type="submit" value="$ Buy Now"/></form>
+</td>
+
+</tr>
+</table>
+
 </html>

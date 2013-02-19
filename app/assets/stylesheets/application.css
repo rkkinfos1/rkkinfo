@@ -20,6 +20,23 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ div.hover {
+position: relative;
+z-index:200;
+display: block;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+ div.hover:hover{
+-webkit-transform:scale(1.05, 1.1);
+-moz-transform:scale(1.05, 1.1);
+-o-transform:scale(1.05, 1.1);
+-ms-transform:scale(1.05, 1.1);
+transform:scale(1.05, 1.1);}
 .clearfix {
   *zoom: 1;
 }
@@ -590,6 +607,37 @@ a.muted:hover {
 a.text-warning:hover {
   color: #a47e3c;
 }
+.error_messages
+{width: 400px;
+border: 2px solid #CF0000;
+padding: 0px;
+padding-bottom: 12px;
+margin-bottom: 20px;
+background-color: #f0f0f0;
+font-size: 12px;
+}
+
+.error_messages h2
+{text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p
+{
+  margin: 8px 10px;
+}
+
+.field_with_errors
+{
+  display: inline;
+}
+
+
 .text-error {
   color: #b94a48;
 }
@@ -6114,3 +6162,4 @@ button.close {
     overflow: visible !important;
   }
 }
+
