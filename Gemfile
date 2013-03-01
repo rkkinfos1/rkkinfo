@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'therubyracer'
-gem 'activeadmin' , '~> 0.5.1'
+gem 'activeadmin' 
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'paperclip'
 gem 'twitter-bootstrap-rails'
