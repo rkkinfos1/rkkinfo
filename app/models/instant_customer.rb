@@ -12,4 +12,5 @@ class InstantCustomer < ActiveRecord::Base
     order('created_at desc').find(:all)
   end
 end
+
 end

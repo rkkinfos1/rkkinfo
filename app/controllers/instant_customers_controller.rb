@@ -3,6 +3,7 @@ class InstantCustomersController < ApplicationController
   # GET /instant_customers.json
   def index
         @instant_customers = InstantCustomer.search(params[:emp_no])
+
         if !session[:logged_in]
   redirect_to :controller => 'login', 
               :action => 'login_page' 
