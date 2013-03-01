@@ -193,7 +193,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  activeadmin (~> 0.5.1)
+  activeadmin
   client_side_validations
   coffee-rails (~> 3.2.1)
   heroku
