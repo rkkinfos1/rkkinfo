@@ -196,6 +196,7 @@ DEPENDENCIES
   activeadmin
   client_side_validations
   coffee-rails (~> 3.2.1)
+  coffee-script-source (~> 1.4.0)
   heroku
   jquery-rails
   meta_search (>= 1.1.0.pre)
