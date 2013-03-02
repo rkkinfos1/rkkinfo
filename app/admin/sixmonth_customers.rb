@@ -26,4 +26,5 @@ index do
   
   default_actions
 end 
+config.per_page = 10
 end
