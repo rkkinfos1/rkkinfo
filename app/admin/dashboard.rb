@@ -12,8 +12,8 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-  section "Newly Added One Time Customers" do
-    table_for InstantCustomer.order("created_at desc").limit(5) do
+  section "Newly Added Customers" do
+    table_for Customer.order("created_at desc").limit(10) do
         column :emp_no
         column :name
         column "email",:e_mail
@@ -21,48 +21,11 @@ ActiveAdmin.register_page "Dashboard" do
         column :plan
         column "Joined On",:created_at
     end
-    strong{ link_to "View All One time customers",admin_instant_customers_path}
+    strong{ link_to "View All Customers",admin_customers_path}
 end
 
 
-section "Newly Added Six Months Customers" do
-    table_for SixmonthCustomer.order("created_at desc").limit(5) do
-        column :emp_no
-        column :name
-        column "email",:e_mail
-        column :phone
-          column :plan
 
-        column "Joined On",:created_at
-    end
-    strong{ link_to "View All Six Months customers",admin_sixmonth_customers_path}
-end
-
-section "Newly Added One Year Customers" do
-    table_for OneyearCustomer.order("created_at desc").limit(5) do
-        column :emp_no
-        column :name
-        column "email",:e_mail
-        column :phone
-  column :plan
-
-        column "Joined On",:created_at
-    end
-    strong{ link_to "View All One Year customers",admin_oneyear_customers_path}
-end
-
-section "Newly Added Two Year Customers" do
-    table_for TwoyearCustomer.order("created_at desc").limit(5) do
-        column :emp_no
-        column :name
-        column "email",:e_mail
-        column :phone
-  column :plan
-
-        column "Joined On",:created_at
-    end
-    strong{ link_to "View All Two Year customers",admin_twoyear_customers_path}
-end
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do

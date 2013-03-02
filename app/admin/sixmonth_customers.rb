@@ -1,6 +1,6 @@
 ActiveAdmin.register SixmonthCustomer do
    scope :new_customer
-   menu :parent => "Customers"
+   menu :parent => "Old Customers"
 
 
     actions :all

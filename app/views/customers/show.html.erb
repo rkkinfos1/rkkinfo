@@ -1,0 +1,25 @@
+<html>
+<%- model_class = Customer -%>
+
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:emp_no) %>:</strong></dt>
+  <dd><%= @customer.emp_no %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @customer.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd><%= @customer.phone %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:e_mail) %>:</strong></dt>
+  <dd><%= @customer.e_mail %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:plan) %>:</strong></dt>
+  <dd><%= @customer.plan %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:technician) %>:</strong></dt>
+  <dd><%= @customer.technician %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:issue) %>:</strong></dt>
+  <dd><%= @customer.issue %></dd>
+  
+</dl>
+<br/><br/>
+<div align="center">
+<a href="http://www.rkkinfo.com/"><button>Proceed</button></a>
+</html>

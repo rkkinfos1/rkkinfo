@@ -1,0 +1,31 @@
+<html>
+<br>
+<%- model_class = Customer -%>
+<%= form_for @customer, :html => { :class => 'form-horizontal' } do |f| %>
+
+ <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :issue, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :issue, :class => 'text_area' %>
+    </div>
+  </div>
+<div class="control-group" style="color:#1C9DD6">
+    <%= f.label :trouble_shootingsteps, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :trouble_shootingsteps, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group style="color:#1C9DD6"">
+    <%= f.label :feedback, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select :feedback, ['Issue Solved','Issue Not Solved','Under Screening'] %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+<form class="form-search">
+    <button type="submit" class="btn">Proceed</button>
+    </form>   
+  </div>
+  <% end %>
+</html>

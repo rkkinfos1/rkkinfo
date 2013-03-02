@@ -1,0 +1,52 @@
+<html>
+<%= form_for @customer, :validate => true, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :emp_no, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :emp_no, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :e_mail, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :e_mail, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :plan, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select :plan, ['One Time service ($99)','Six Months service ($129)','One Year service ($199)','Two Year service ($279)'] %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :technician_alloted, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :technician, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group" style="color:#1C9DD6">
+    <%= f.label :issue, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :issue, :class => 'text_area' , :cols => "30", :rows => "8" %>
+    </div>
+  </div>
+  
+<div class="form-actions">
+  <form class="form-search">
+    <button type="submit" class="btn">Proceed</button>
+    </form> 
+  </div>
+<% end %>
+</html>

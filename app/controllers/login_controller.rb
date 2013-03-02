@@ -24,7 +24,7 @@ class LoginController < ApplicationController
       	pw_from_db = pw_array[0].password
         if pw_from_db == encoded_pw
           session[:logged_in] = true
-          redirect_to :controller => '/instant_customers' 
+          redirect_to :controller => '/customers' 
         end
       end
     end

@@ -1,4 +1,7 @@
 Rkkinfo::Application.routes.draw do
+  resources :customers
+
+
   resources :sixmonth_customers
 
 
