@@ -19,7 +19,7 @@ filter :emp_no
   f.input :name
   f.input :e_mail
   f.input :phone
-  f.input :plan, :as => :select, :collection => ['One Time service ($79)','One Time service ($89)','Six Months service ($129)','One Year service ($199)','One Year service SOHO Plan ($279)']
+  f.input :plan, :as => :select, :collection => ['One Time service ($89)','Six Months service ($129)','One Year service ($199)','Two year service ($279)']
   f.input :technician
   f.input :issue
   f.input :feedback, :as => :select, :collection => ['Issue Solved','Issue Not Solved','Under Screening']
