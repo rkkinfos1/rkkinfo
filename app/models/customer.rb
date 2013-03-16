@@ -1,5 +1,5 @@
 class Customer < ActiveRecord::Base
-  attr_accessible :e_mail, :emp_no, :feedback, :issue, :name, :phone, :plan, :refund, :technician, :trouble_shootingsteps
+  attr_accessible :e_mail, :emp_no, :feedback, :issue, :name, :phone, :plan, :refund, :technician, :trouble_shootingsteps, :refund_amount
 
 scope :new_customer,where( 'created_at between ? and ?', Date.today, Date.tomorrow)
     validates :e_mail, :format => { :with => /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/,

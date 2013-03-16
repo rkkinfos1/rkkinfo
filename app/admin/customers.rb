@@ -19,12 +19,13 @@ filter :emp_no
   f.input :name
   f.input :e_mail
   f.input :phone
-  f.input :plan, :as => :select, :collection => ['One Time service ($89)','Six Months service ($129)','One Year service ($199)','Two year service ($279)']
+  f.input :plan
   f.input :technician
   f.input :issue
   f.input :feedback, :as => :select, :collection => ['Issue Solved','Issue Not Solved','Under Screening']
   f.input :trouble_shootingsteps
   f.input :refund, :as => :select, :collection => ['Yes','No']
+  f.input :refund_amount
     end
     f.buttons
   end
@@ -42,6 +43,7 @@ filter :emp_no
   column :feedback
   column :trouble_shootingsteps
   column :refund
+  column :refund_amount
   column "joined on", :created_at
   
   default_actions
