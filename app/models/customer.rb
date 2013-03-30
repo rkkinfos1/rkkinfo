@@ -9,7 +9,7 @@ def self.search(search)
   if search
     search=search.split(/,/)
     if search.count == 1
-      order('created_at desc').find(:all, :conditions => ['emp_no LIKE ? or name LIKE ?', "%#{search[0]}%", "%#{search[0]}%"])
+      order('created_at desc').find(:all, :conditions => ['emp_no LIKE ? or name LIKE ? or e_mail LIKE ? or phone LIKE ? or technician LIKE ? or refund LIKE ?', "%#{search[0]}%", "%#{search[0]}%", "%#{search[0]}%", "%#{search[0]}%", "%#{search[0]}%", "%#{search[0]}%"])
     else
       order('created_at desc').find(:all, :conditions => ['emp_no LIKE ? and name LIKE ?', "%#{search[0]}%", "%#{search[1]}%"])
     end

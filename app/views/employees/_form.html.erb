@@ -38,11 +38,11 @@
   <div class="control-group">
     <%= f.label :date_of_joining, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :date_of_joining, :id => 'datetime', :class => 'datetime' %>
+      <%= f.date_select :date_of_joining, :class => 'date_select' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :date_of_resignation, :class => 'control-label' %>
+    <%= f.label :date_of_resignation, :as => 'date' %>
     <div class="controls">
       <%= f.text_field :date_of_resignation, :id => 'datetime', :class => 'datetime'  %>
     </div>
