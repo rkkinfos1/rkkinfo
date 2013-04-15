@@ -1,7 +1,7 @@
 class Customer < ActiveRecord::Base
   attr_accessible :e_mail, :emp_no, :feedback, :issue, :name, :phone, :plan, :refund, :technician, :trouble_shootingsteps, :refund_amount
 
-scope :new_customer,where( 'created_at between ? and ?', Date.today, Date.tomorrow
+scope :new_customer,where( 'created_at between ? and ?', Date.today, Date.tomorrow)
 scope :monthly_performance,where( 'created_at between ? and ?', 1.month.ago,Date.today)
    scope :quarterly_performance,where( 'created_at between ? and ?', 3.months.ago,Date.today)
    scope :yearly_performance,where( 'created_at between ? and ?', 1.year.ago,Date.today)

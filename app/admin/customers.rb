@@ -1,6 +1,6 @@
 ActiveAdmin.register Customer do
   scope :new_customer
-  scope :monthly_performance
+    scope :monthly_performance
    scope :quarterly_performance
    scope :yearly_performance 
       actions :all
