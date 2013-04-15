@@ -14,7 +14,7 @@ index do
   column :emp_no
   column :name
   column :e_mail
-  column :phone
+  column :phone 
     column :plan
 
   column :issue

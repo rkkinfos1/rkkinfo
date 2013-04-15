@@ -12,8 +12,8 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-  section "Newly Added Customers" do
-    table_for Customer.order("created_at desc").limit(10) do
+  panel "Newly Added Customers" do
+    table_for Customer.order("created_at desc").limit(5) do
         column :emp_no
         column :name
         column "email",:e_mail
@@ -24,7 +24,17 @@ ActiveAdmin.register_page "Dashboard" do
     strong{ link_to "View All Customers",admin_customers_path}
 end
 
-
+panel "Newly Updated Customers" do
+    table_for Customer.order("updated_at desc").limit(5) do
+        column :emp_no
+        column :name
+        column "email",:e_mail
+        column :phone
+        column :plan
+        column "Joined On",:created_at
+    end
+    strong{ link_to "View All Customers",admin_customers_path}
+end
 
     # Here is an example of a simple dashboard with columns and panels.
     #
