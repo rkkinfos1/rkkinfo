@@ -2,7 +2,8 @@ ActiveAdmin.register Employee do
    actions :all
     	   filter :no
 	   filter :name
-	   filter :salary
+	   filter :gross_salary
+     filter :net_salary
 	   filter :date_of_joining
      show do 
       attributes_table do
@@ -11,7 +12,8 @@ ActiveAdmin.register Employee do
   row :address
   row :tel
   row :email
-  row :salary
+  row :gross_salary
+  row :net_salary
   row :date_of_joining
   row :date_of_resignation
   row "CV" do |employee|
@@ -32,7 +34,8 @@ ActiveAdmin.register Employee do
   column :address
   column :tel
   column :email
-  column :salary
+  column :gross_salary
+  column :net_salary
   column :date_of_joining
   column :date_of_resignation
   column "CV" do |employee|
@@ -51,7 +54,8 @@ end
     f.input :address
     f.input :tel
     f.input :email
-    f.input :salary
+    f.input :gross_salary
+    f.input :net_salary
     f.input :date_of_joining, :as => :date
     f.input :date_of_resignation, :as => :date
     f.input :cv, :as => :file, :hint => f.template.image_tag(f.object.cv.url(:medium))

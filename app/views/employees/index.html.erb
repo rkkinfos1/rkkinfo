@@ -13,7 +13,8 @@
 
       <th><%= model_class.human_attribute_name(:email) %></th>
 
-      <th><%= model_class.human_attribute_name(:salary) %></th>
+      <th><%= model_class.human_attribute_name(:gross_salary) %></th>
+      <th><%= model_class.human_attribute_name(:net_salary) %></th>
 
       <th><%= model_class.human_attribute_name(:date_of_joining) %></th>
             <th><%= model_class.human_attribute_name(:date_of_resignation) %></th>
@@ -35,7 +36,9 @@
 
         <td><%= employee.email %></td>
 
-        <td><%= employee.salary %></td>
+        <td><%= employee.gross_salary %></td>
+                <td><%= employee.net_salary %></td>
+
 
         <td><%= employee.date_of_joining %></td>
                 <td><%= employee.date_of_resignation %></td>
